@@ -684,6 +684,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MP"
 			(uuid "51f3aa0c-a808-412a-895d-17be13434253")
 		)
@@ -758,6 +767,15 @@
 			)
 		)
 		(property "MPN" "PTV09A4030FB103"
+			(at 121.92 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
 			(at 121.92 128.27 0)
 			(effects
 				(font
@@ -848,6 +866,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 121.92 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MP"
 			(uuid "8a27fb8f-e95b-4143-ac14-f6991c05c403")
 		)
@@ -930,6 +957,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 121.92 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MP"
 			(uuid "b2bc96fa-0b39-4f75-829a-ed211f5ae092")
 		)
@@ -1004,6 +1040,15 @@
 			)
 		)
 		(property "MPN" "PTV09A4030FB103"
+			(at 121.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
 			(at 121.92 95.25 0)
 			(effects
 				(font
@@ -1821,6 +1866,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 121.92 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MP"
 			(uuid "fa1c60e9-cd98-4ae8-be8b-a6d9b8dc824d")
 		)
@@ -2228,6 +2282,15 @@
 			)
 		)
 		(property "MPN" "PTV09A4030FB103"
+			(at 121.92 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
 			(at 121.92 29.21 0)
 			(effects
 				(font
@@ -2718,6 +2781,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 121.92 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MP"
 			(uuid "1c1db9d8-66d6-46f6-9848-1571252e9bed")
 		)
@@ -2792,6 +2864,15 @@
 			)
 		)
 		(property "MPN" "PTV09A4030FB103"
+			(at 121.92 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
 			(at 121.92 45.72 0)
 			(effects
 				(font

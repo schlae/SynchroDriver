@@ -1446,6 +1446,19 @@
 				)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34c0eb65-676a-4bb5-929a-18818079e6c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/87978731-e587-407f-afdb-0b68849fe141/813ba201-a6a4-48a1-b4ae-1f03ebc451a9")
 		(sheetname "/Pots/")
@@ -6406,6 +6419,19 @@
 				)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "685ef4a3-9667-496a-942a-36081dc8b136")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/87978731-e587-407f-afdb-0b68849fe141/f6c98221-b175-4108-915d-2327b3982be9")
 		(sheetname "/Pots/")
@@ -7377,6 +7403,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8b6a5e68-01d1-45e5-a845-2ba9077b667e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ae05166-6961-466e-81b1-761c81e81a79")
 			(effects
 				(font
 					(size 1 1)
@@ -8394,6 +8433,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "261814b4-8475-419e-96a2-7b5c4202ac35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "530153ae-2819-469a-b50e-b88a9e7e41d2")
 			(effects
 				(font
 					(size 1 1)
@@ -17441,7 +17493,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm*")
-		(path "/fd0459a3-f1bb-4406-88d3-fc0a32fdabdf")
+		(path "/cb1d31bc-2258-40bc-a06a-4fd642e83a72")
 		(sheetname "/")
 		(sheetfile "SynchroDriverD.kicad_sch")
 		(attr smd)
@@ -21567,6 +21619,19 @@
 				)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "803a03cd-4adf-4050-a61e-aab166fc5ea8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/87978731-e587-407f-afdb-0b68849fe141/0f28cf3d-25b1-4a4d-b361-c5967f479283")
 		(sheetname "/Pots/")
@@ -24507,6 +24572,19 @@
 				)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1519c73-1f44-45e6-a809-74f8c69dfa93")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/87978731-e587-407f-afdb-0b68849fe141/f4bf4af4-f1a7-4ed3-a47e-86ca142125c9")
 		(sheetname "/Pots/")
@@ -26746,6 +26824,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6afcad83-68d1-457f-a854-04014925924d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fe54435-64af-4589-ba82-5db400f91895")
 			(effects
 				(font
 					(size 1 1)
@@ -40479,6 +40570,19 @@
 				)
 			)
 		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1a5f7df-e528-463a-94b0-831668b5f673")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/87978731-e587-407f-afdb-0b68849fe141/12df7a31-4123-4790-840f-61dec1b9a219")
 		(sheetname "/Pots/")
@@ -43348,6 +43452,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "654f4929-d8c3-44b4-b322-4689b574144d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "652-PTV09A4030FB103"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d35ac2e-6588-46cb-b945-2587a1f70a1a")
 			(effects
 				(font
 					(size 1 1)
