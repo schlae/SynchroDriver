@@ -872,7 +872,7 @@
 		(descr "Resistor SMD 0805, hand soldering")
 		(tags "resistor 0805")
 		(property "Reference" "C10"
-			(at 0 2 0)
+			(at 3.7 -0.1 0)
 			(layer "F.SilkS")
 			(uuid "1bfcd75e-9f1c-4539-96cf-ffeca2e3eab2")
 			(effects
@@ -1080,7 +1080,7 @@
 		(descr "Choke, SMD, 7.3x7.3mm 3.5mm height")
 		(tags "Choke SMD")
 		(property "Reference" "L1"
-			(at 0 -4.45 0)
+			(at -4.6 -3 0)
 			(layer "F.SilkS")
 			(uuid "1d01b5f5-3916-409e-a858-15435d09f39f")
 			(effects
@@ -1374,7 +1374,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R4"
-			(at -3 -0.25 0)
+			(at -2.8 0 0)
 			(layer "F.SilkS")
 			(uuid "b32a213b-0b80-41ac-b3b4-6804f3aa567d")
 			(effects
@@ -1768,7 +1768,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C15"
-			(at 0 -1.85 90)
+			(at -0.35 -1.85 90)
 			(layer "F.SilkS")
 			(uuid "82d3e919-e5f3-4ea0-8de1-afe3751ffaf9")
 			(effects
@@ -2389,7 +2389,7 @@
 		(descr "Resistor SMD 0805, hand soldering")
 		(tags "resistor 0805")
 		(property "Reference" "R15"
-			(at 0 1.75 90)
+			(at -0.7 1.8 90)
 			(layer "F.SilkS")
 			(uuid "82c2eddc-ab10-48f9-904f-6f89bfac4ff4")
 			(effects
@@ -2894,7 +2894,7 @@
 		(descr "Choke, SMD, 7.3x7.3mm 3.5mm height")
 		(tags "Choke SMD")
 		(property "Reference" "L2"
-			(at 0 -4.45 0)
+			(at -4.6 -3 0)
 			(layer "F.SilkS")
 			(uuid "c4796990-fc6f-4267-9a79-28da2239761c")
 			(effects
@@ -3506,7 +3506,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C13"
-			(at 0 -1.85 90)
+			(at -0.65 -1.85 90)
 			(layer "F.SilkS")
 			(uuid "950d8bab-bd75-4cff-aa3f-8a7100bef94c")
 			(effects
@@ -3718,7 +3718,7 @@
 		(descr "Resistor SMD 0805, hand soldering")
 		(tags "resistor 0805")
 		(property "Reference" "C3"
-			(at 3.25 -0.25 90)
+			(at 2.85 0 180)
 			(layer "F.SilkS")
 			(uuid "9cdf469d-d718-46e6-a1d8-756cf7ce402a")
 			(effects
@@ -5009,7 +5009,7 @@
 		(uuid "5d0cbc04-9d56-47d0-9f5f-3d3557b6e64c")
 		(at 143.1 88.45)
 		(property "Reference" "C1"
-			(at 0 -6.2 0)
+			(at -6.1 0.95 0)
 			(layer "F.SilkS")
 			(uuid "a3455547-a384-4e11-b9e2-b68e55c8eaea")
 			(effects
@@ -5478,7 +5478,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C14"
-			(at 0 -1.85 90)
+			(at -0.35 -1.85 90)
 			(layer "F.SilkS")
 			(uuid "d06b0cad-aab4-4cbf-be88-b299f4a30bf5")
 			(effects
@@ -7410,7 +7410,7 @@
 		(descr "Choke, SMD, 7.3x7.3mm 3.5mm height")
 		(tags "Choke SMD")
 		(property "Reference" "L3"
-			(at 0 -4.45 0)
+			(at -4.6 -3 0)
 			(layer "F.SilkS")
 			(uuid "9e4e9bce-219c-414d-bb42-39aa6d4e7a31")
 			(effects
@@ -7704,7 +7704,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R5"
-			(at -2.5 0.15 0)
+			(at -2.4 -0.05 0)
 			(layer "F.SilkS")
 			(uuid "9b1678ae-c649-40be-a7b4-050be069129f")
 			(effects
@@ -10130,7 +10130,7 @@
 		(descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0603")
 		(property "Reference" "R9"
-			(at -2.65 0 0)
+			(at -2.4 0 0)
 			(layer "F.SilkS")
 			(uuid "bbf21ee6-8843-417e-bf18-615b885f9b19")
 			(effects
@@ -11132,6 +11132,213 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "520de26e-2665-497c-8627-f3e674030938")
+	)
+	(gr_text "GND"
+		(at 133 84.4 270)
+		(layer "F.SilkS")
+		(uuid "40fc14f6-cefc-4fc0-b970-7fbdfd913e91")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "B"
+		(at 183.4 96.8 0)
+		(layer "F.SilkS")
+		(uuid "56c864e0-a248-43bd-bdb0-5e73113e9f9e")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "BL"
+		(at 124.4 99.4 0)
+		(layer "F.SilkS")
+		(uuid "581e9689-b408-4cde-9451-97b0343b8c16")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "+12V"
+		(at 130.6 84.4 270)
+		(layer "F.SilkS")
+		(uuid "5f0cf5bc-197f-475d-84a3-22f4cfa3c7ba")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "B"
+		(at 124.6 91.6 0)
+		(layer "F.SilkS")
+		(uuid "957f21fa-3b66-450d-ad7c-719713f8c81e")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "A"
+		(at 183.4 94.4 0)
+		(layer "F.SilkS")
+		(uuid "982829d1-f167-493e-9b18-ce6613080236")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "AL"
+		(at 124.4 96.8 0)
+		(layer "F.SilkS")
+		(uuid "9901572b-0ba7-4ba1-9614-0a7ef2527a3e")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "CL"
+		(at 124.4 101.8 0)
+		(layer "F.SilkS")
+		(uuid "acf0cc41-159e-428f-8df1-0e8a4ad63e36")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "C"
+		(at 124.6 94.2 0)
+		(layer "F.SilkS")
+		(uuid "c38ccbd5-fdcc-44c6-892c-6d982c598dac")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "A"
+		(at 124.6 89.2 0)
+		(layer "F.SilkS")
+		(uuid "ce8ae3a0-ba30-4857-94c1-c852dac9e268")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "C"
+		(at 183.4 99.4 0)
+		(layer "F.SilkS")
+		(uuid "d9a8015c-d7ca-44bf-8ce5-469df37306bc")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "GND"
+		(at 183.4 102 0)
+		(layer "F.SilkS")
+		(uuid "e3280250-4cdb-4a3e-b534-3de257330c24")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "3-PHASE SYNCHRO DRIVER"
+		(at 157.8 82 0)
+		(layer "F.SilkS")
+		(uuid "ea8fd996-8269-4357-840a-42da53303791")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1524)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "©2025 TUBE TIME"
+		(at 149.6 110.6 0)
+		(layer "F.SilkS")
+		(uuid "eb0a4613-724e-4daa-8ec9-349720a31a6c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "GND"
+		(at 124.6 104.4 0)
+		(layer "F.SilkS")
+		(uuid "f26d419a-5a0b-4cc0-b314-d299749d4b1a")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "+V"
+		(at 135.6 84.4 270)
+		(layer "F.SilkS")
+		(uuid "f2ede61f-0779-4be7-a4c3-ee16f92b824e")
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.1524)
+				(bold yes)
+			)
+			(justify left)
+		)
 	)
 	(segment
 		(start 176.525 94.4)
