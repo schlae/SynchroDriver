@@ -2992,7 +2992,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "560pF"
 			(at 212.852 102.362 0)
 			(effects
 				(font
@@ -3111,6 +3111,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "871-B82472G4224M"
+			(at 214.63 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "86f24c3c-13c3-4027-9037-fcc7b9c857df")
 		)
@@ -3151,7 +3160,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "560pF"
 			(at 213.614 118.364 0)
 			(effects
 				(font
@@ -3227,7 +3236,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "5.6"
 			(at 210.82 112.522 0)
 			(effects
 				(font
@@ -3334,6 +3343,15 @@
 		)
 		(property "Description" "Dual NMOS transistor, 6 pin package"
 			(at 153.416 141.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "78-SIS990DN-T1-GE3"
+			(at 151.13 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,6 +3747,15 @@
 			)
 		)
 		(property "MPN" "CL31A106KBHNNNE"
+			(at 219.71 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "187-CL31A106KBHNNNE"
 			(at 219.71 129.54 0)
 			(effects
 				(font
@@ -4196,6 +4223,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "187-CL31A106KBHNNNE"
+			(at 219.71 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ffaac141-f924-455a-a927-0ce0484139cc")
 		)
@@ -4273,6 +4309,15 @@
 		)
 		(property "MPN" "B82472G4224M000"
 			(at 214.63 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "871-B82472G4224M"
+			(at 214.63 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,6 +4406,16 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "871-B82472G4224M"
+			(at 214.63 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4597,6 +4652,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "187-CL31A106KBHNNNE"
+			(at 177.8 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a1a1272d-46a0-4324-a961-f347503fd035")
 		)
@@ -4790,7 +4854,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "5.6"
 			(at 210.82 127.762 0)
 			(effects
 				(font
@@ -4941,7 +5005,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "560pF"
 			(at 213.614 133.604 0)
 			(effects
 				(font
@@ -5434,6 +5498,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "187-CL31A106KBHNNNE"
+			(at 219.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f7c30533-95d5-48e6-abc2-c633267e72fb")
 		)
@@ -5774,7 +5847,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "5.6"
 			(at 210.82 97.282 0)
 			(effects
 				(font
@@ -6188,6 +6261,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "78-SIS990DN-T1-GE3"
+			(at 189.23 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9d6411ad-71c0-4879-bb65-a41872e494bb")
 		)
@@ -6271,6 +6353,15 @@
 		)
 		(property "Description" "Dual NMOS transistor, 6 pin package"
 			(at 172.466 141.732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "78-SIS990DN-T1-GE3"
+			(at 170.18 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6521,6 +6612,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "78-SIS990DN-T1-GE3"
+			(at 170.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f06bb77-4850-4a25-a07c-3fa9fdec95b9")
 		)
@@ -6756,6 +6856,15 @@
 		)
 		(property "Description" "Dual NMOS transistor, 6 pin package"
 			(at 191.516 129.032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "78-SIS990DN-T1-GE3"
+			(at 189.23 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7009,6 +7118,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "187-CL31A106KBHNNNE"
+			(at 158.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e65381ff-2b12-40cd-af97-a38ae1d3d842")
 		)
@@ -7162,6 +7280,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "78-SIS990DN-T1-GE3"
+			(at 151.13 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5f0a7fad-b468-4885-8a6d-bc3f5af23473")
 		)
@@ -7258,6 +7385,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "187-CL31A106KBHNNNE"
+			(at 196.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a5d119c1-c6aa-4951-9608-8f06e467cacb")
 		)
@@ -7329,6 +7465,15 @@
 		)
 		(property "Description" "100V Three-Phase BLDC Gate Driver"
 			(at 115.316 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "595-DRV8300DIPWR"
+			(at 106.68 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)

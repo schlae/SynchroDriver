@@ -785,7 +785,7 @@
 		)
 		(uuid "1bcdc0f4-e541-4fa3-bf47-b78e78d56915")
 	)
-	(text "(1.65V)"
+	(text "1.1V"
 		(exclude_from_sim no)
 		(at 102.108 85.09 0)
 		(effects
@@ -1798,7 +1798,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "20K"
 			(at 121.666 57.15 90)
 			(effects
 				(font
@@ -2023,7 +2023,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "20K"
 			(at 121.666 109.22 90)
 			(effects
 				(font
@@ -2126,6 +2126,15 @@
 			)
 		)
 		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 119.38 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "863-LM324DR2G"
 			(at 119.38 125.73 0)
 			(effects
 				(font
@@ -2838,6 +2847,15 @@
 			)
 		)
 		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 119.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "863-LM324DR2G"
 			(at 119.38 73.66 0)
 			(effects
 				(font

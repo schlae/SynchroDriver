@@ -3033,7 +3033,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "560pF"
 			(at 212.852 102.362 0)
 			(effects
 				(font
@@ -3204,7 +3204,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "560pF"
 			(at 213.614 118.364 0)
 			(effects
 				(font
@@ -3286,7 +3286,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "5.6"
 			(at 210.82 112.522 0)
 			(effects
 				(font
@@ -4955,7 +4955,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "5.6"
 			(at 210.82 127.762 0)
 			(effects
 				(font
@@ -5118,7 +5118,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "560pF"
 			(at 213.614 133.604 0)
 			(effects
 				(font
@@ -6070,7 +6070,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "5.6"
 			(at 210.82 97.282 0)
 			(effects
 				(font

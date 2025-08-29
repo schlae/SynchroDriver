@@ -1232,6 +1232,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "637-MMBTA42"
+			(at 104.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7f50f136-1d09-4b72-8928-0474b361ff62")
 		)
@@ -1432,6 +1441,15 @@
 			)
 		)
 		(property "Description" "0.5A Ic, 300V Vce, PNP High Voltage Transistor, SOT-23"
+			(at 106.68 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "637-MMBTA92"
 			(at 106.68 72.39 0)
 			(effects
 				(font
