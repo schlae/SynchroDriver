@@ -188,7 +188,7 @@ void setup() {
   }
   for (int i = 0; i < N_OTHER; i++) {
     pinMode(otherOutputs[i], OUTPUT);
-    analogWriteFrequency(otherOutputs[i], 15000000 / 1024);  // divide by 1024 for slower frequency
+    analogWriteFrequency(otherOutputs[i], 15000000 / 64);
   }
   digitalWrite(FLAG, 1);
 

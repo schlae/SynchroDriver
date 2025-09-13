@@ -775,16 +775,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Optional RC"
-		(exclude_from_sim no)
-		(at 70.612 67.056 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1bcdc0f4-e541-4fa3-bf47-b78e78d56915")
-	)
 	(text "1.1V"
 		(exclude_from_sim no)
 		(at 102.108 85.09 0)
@@ -794,16 +784,6 @@
 			)
 		)
 		(uuid "283a4e9c-497b-4945-b604-2cbe29334b28")
-	)
-	(text "Optional RC"
-		(exclude_from_sim no)
-		(at 70.612 119.126 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "47f4969e-f101-4de6-9e53-75cf41f48600")
 	)
 	(text "Run from +/-12V"
 		(exclude_from_sim no)
@@ -1723,7 +1703,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "0.1uF"
 			(at 79.502 76.962 0)
 			(effects
 				(font
@@ -2219,7 +2199,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "DNI"
 			(at 67.31 83.312 0)
 			(effects
 				(font
@@ -2294,7 +2274,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "1K"
 			(at 73.406 121.92 90)
 			(effects
 				(font
@@ -2519,7 +2499,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "1K"
 			(at 73.406 69.85 90)
 			(effects
 				(font
@@ -2669,7 +2649,7 @@
 				)
 			)
 		)
-		(property "Value" "DNI"
+		(property "Value" "0.1uF"
 			(at 79.502 129.032 0)
 			(effects
 				(font
@@ -2744,7 +2724,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "DNI"
 			(at 67.31 133.35 0)
 			(effects
 				(font
