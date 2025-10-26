@@ -3,9 +3,9 @@
  * Ken Shirriff, righto.com
 */
 
-IntervalTimer myTimer; // Interrupt to update the PWM levels
+IntervalTimer myTimer;  // Interrupt to update the PWM levels
 
-volatile unsigned long count = 0; // Index into the sine wave
+volatile unsigned long count = 0;  // Index into the sine wave
 
 // Analog inputs from pots
 #define ROLL A0
@@ -168,8 +168,8 @@ void update() {
 
 // Sync interrupt
 void syncInterrupt() {
-  if (count < 20 || count > 80) { // Ignore sync if it is wildly off
-      count = 0; // Reset the counter on rising edge of sync input
+  if (count < 20 || count > 80) {  // Ignore sync if it is wildly off
+    count = 0;                     // Reset the counter on rising edge of sync input
   }
 }
 
@@ -192,12 +192,12 @@ void setup() {
   }
   digitalWrite(FLAG, 1);
 
-  myTimer.begin(update, 25); // 25 microseconds * 100 samples give 400 Hz
+  myTimer.begin(update, 25);  // 25 microseconds * 100 samples give 400 Hz
 
   attachInterrupt(digitalPinToInterrupt(SYNC), syncInterrupt, RISING);
 }
 
-int sync = 0; // Track the sync input
+int sync = 0;  // Track the sync input
 
 void loop() {
 
@@ -219,5 +219,4 @@ void loop() {
     int input = analogRead(ainputs[i + NEEDLE_OFFSET]) / 4;
     analogWrite(otherOutputs[i], input);
   }
-
 }
