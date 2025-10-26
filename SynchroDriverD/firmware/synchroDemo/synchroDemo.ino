@@ -206,7 +206,7 @@ void loop() {
   // the next axis. The variable step controls which axis is being moved.
   for (int axis = 0; axis < 3; axis++) {
     for (int ms = 0; ms < DURATION; ms++) {
-      float ang = sin(ms / DURATION * 2 * PI) * 2 * PI;  // Vary angle sinusoidally over 10 seconds with amplitude of 2pi
+      float ang = sin(ms / (float) DURATION * 2 * PI) * 2 * PI;  // Vary angle sinusoidally over 10 seconds with amplitude of 2pi
       float m0 = (sin(ang) + 1) / 2;
       float m1 = (sin(ang + 2 * PI / 3) + 1) / 2;
       float m2 = (sin(ang + 4 * PI / 3) + 1) / 2;
@@ -223,7 +223,7 @@ void loop() {
   for (int needle = 0; needle < 6; needle++) {
     for (int ms = 0; ms < DURATION; ms++) {
       // Midpoint is 128
-      float val = sin(ms / DURATION * 2 * PI) * 127 + 128;  // Vary angle sinusoidally over 10 seconds from 1 to 255
+      float val = sin(ms / (float) DURATION * 2 * PI) * 127 + 128;  // Vary angle sinusoidally over 10 seconds from 1 to 255
       analogWrite(otherOutputs[needle], val);
       delay(1 /* ms */);
     }
