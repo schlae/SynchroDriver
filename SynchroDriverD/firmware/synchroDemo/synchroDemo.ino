@@ -1,5 +1,5 @@
 /**
- * Driver for TubeTime's synchro board.
+ * Demo for TubeTime's synchro board.
  * Ken Shirriff, righto.com
 */
 
@@ -199,24 +199,33 @@ void setup() {
 
 int sync = 0;  // Track the sync input
 
-void loop() {
+#define DURATION 10000 /* ms */
 
-  // Synchro outputs. Set them according to the pot inputs
-  for (int i = 0; i < 3; i++) {
-    float ang = analogRead(ainputs[i]) / 1024. * 2 * PI;
-    float m0 = (sin(ang) + 1) / 2;
-    float m1 = (sin(ang + 2 * PI / 3) + 1) / 2;
-    float m2 = (sin(ang + 4 * PI / 3) + 1) / 2;
-    noInterrupts();
-    mag[3 * i] = m0;
-    mag[3 * i + 1] = m1;
-    mag[3 * i + 2] = m2;
-    interrupts();
+void loop() {
+  // The idea of the demo is to move one axis at a time for about 10 seconds (controlled by ms), and then move to
+  // the next axis. The variable step controls which axis is being moved.
+  for (int axis = 0; axis < 3; axis++) {
+    for (int ms = 0; ms < DURATION; ms++) {
+      float ang = sin(ms / DURATION * 2 * PI) * 2 * PI;  // Vary angle sinusoidally over 10 seconds with amplitude of 2pi
+      float m0 = (sin(ang) + 1) / 2;
+      float m1 = (sin(ang + 2 * PI / 3) + 1) / 2;
+      float m2 = (sin(ang + 4 * PI / 3) + 1) / 2;
+      noInterrupts();
+      mag[3 * axis] = m0;  // Rotate the selected axis
+      mag[3 * axis + 1] = m1;
+      mag[3 * axis + 2] = m2;
+      interrupts();
+      delay(1 /* ms */);
+    }
   }
-  // Needle analog outputs, -3 to +3, according to pot inputs
-  for (int i = 0; i < 6; i++) {
-    // Read is 0 to 1023, write is 0 to 255
-    int input = analogRead(ainputs[i + NEEDLE_OFFSET]) / 4;
-    analogWrite(otherOutputs[i], input);
+
+  // Move one of the six needles at a time
+  for (int needle = 0; needle < 6; needle++) {
+    for (int ms = 0; ms < DURATION; ms++) {
+      // Midpoint is 128
+      float val = sin(ms / DURATION * 2 * PI) * 127 + 128;  // Vary angle sinusoidally over 10 seconds from 1 to 255
+      analogWrite(otherOutputs[needle], val);
+      delay(1 /* ms */);
+    }
   }
 }
