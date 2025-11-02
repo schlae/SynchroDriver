@@ -223,26 +223,26 @@ int sync = 0;  // Track the sync input
 #define DURATION 10000 /* ms */
 
 void loop() {
-  // The idea of the demo is to move one axis at a time for about 10 seconds (controlled by ms), and then move to
-  // the next axis. The variable step controls which axis is being moved.
-  for (int axis = 0; axis < 3; axis++) {
-    Serial.print("axis ");
-    Serial.println(axis, DEC);
+  // The idea of the demo is to move one axis at a time for about 10 seconds (controlled by ms), and then add
+  // the next axis. The variable naxes controls how many axes are moved.
+  for (int naxes = 1; naxes <= 3; naxes++) {
     for (int ms = 0; ms < DURATION; ms++) {
-      float ang = sin(ms / (float)DURATION * 2 * PI) * 2 * PI;  // Vary angle sinusoidally over 10 seconds with amplitude of 2pi
-      setAxis(axis, ang);
+      for (int axis = 0; axis < naxes; axis++) {
+        float ang = sin(ms / (float)DURATION * 2 * PI) * 2 * PI;  // Vary angle sinusoidally over 10 seconds with amplitude of 2pi
+        setAxis(axis, ang);
+      }
       delay(1 /* ms */);
     }
   }
 
-  // Move one of the six needles at a time
-  for (int needle = 0; needle < 6; needle++) {
-    Serial.print("needle ");
-    Serial.println(needle, DEC);
+  // Move three of the six needles at a time
+  for (offset = 0; offset < 6; offset += 3) {
     for (int ms = 0; ms < DURATION; ms++) {
-      // Midpoint is 128
-      float val = sin(ms / (float)DURATION * 2 * PI) * 64 + 128;  // Vary angle sinusoidally over 10 seconds from 1 to 255
-      analogWrite(otherOutputs[needle], val);
+      for (int needle = offset; needle < offset + 3; needle++) {
+        // Midpoint is 128
+        float val = sin(ms / (float)DURATION * 2 * PI) * 64 + 128;  // Vary angle sinusoidally over 10 seconds from 1 to 255
+        analogWrite(otherOutputs[needle], val);
+      }
       delay(1 /* ms */);
     }
   }
