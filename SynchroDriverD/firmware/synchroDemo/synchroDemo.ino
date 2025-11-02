@@ -152,8 +152,8 @@ const int ainputs[N_AIN] = { ROLL, PITCH, YAW, ROLL_RATE, PITCH_RATE, YAW_RATE, 
 #define N_SYNCHRO 9
 const int synchroOutputs[N_SYNCHRO] = { PWM_R0, PWM_R1, PWM_R2, PWM_P0, PWM_P1, PWM_P2, PWM_Y0, PWM_Y1,
                                         PWM_Y2 };
-#define N_OTHER 7
-const int otherOutputs[N_OTHER] = { PWM_RR, PWM_RE, PWM_PR, PWM_PE, PWM_YR, PWM_YE, FLAG };
+#define N_OTHER 6
+const int otherOutputs[N_OTHER] = { PWM_RR, PWM_RE, PWM_PR, PWM_PE, PWM_YR, PWM_YE };
 
 // Magnitudes for the 400 Hz PWM outputs
 volatile float mag[N_SYNCHRO] = { 0 };
@@ -205,7 +205,7 @@ void setup() {
   setAxis(2, 0.);
 
   // Initialize needles
-  for (int i = 0; i < N_OTHER - 1; i++) {
+  for (int i = 0; i < N_OTHER; i++) {
     pinMode(otherOutputs[i], OUTPUT);
     analogWriteFrequency(otherOutputs[i], 15000000 / 64);
     analogWrite(otherOutputs[i], 127);
