@@ -236,7 +236,7 @@ void loop() {
   }
 
   // Move three of the six needles at a time
-  for (offset = 0; offset < 6; offset += 3) {
+  for (int offset = 0; offset < 6; offset += 3) {
     for (int ms = 0; ms < DURATION; ms++) {
       for (int needle = offset; needle < offset + 3; needle++) {
         // Midpoint is 128
