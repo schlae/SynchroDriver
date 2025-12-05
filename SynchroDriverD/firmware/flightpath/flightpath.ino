@@ -1,5 +1,5 @@
 /**
- * Demo for TubeTime's synchro board.
+ * Drive the FDAI controller with flight data provided over the serial line.
  * Ken Shirriff, righto.com
 */
 
@@ -188,6 +188,7 @@ void setAxis(int axis, float ang) {
 }
 
 void setup() {
+  Serial.begin(9600);
   pinMode(SYNC, INPUT);
 
   // Initialize analog inputs
@@ -218,32 +219,29 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(SYNC), syncInterrupt, RISING);
 }
 
-int sync = 0;  // Track the sync input
-
-#define DURATION 10000 /* ms */
-
 void loop() {
-  // The idea of the demo is to move one axis at a time for about 10 seconds (controlled by ms), and then move to
-  // the next axis. The variable step controls which axis is being moved.
-  for (int axis = 0; axis < 3; axis++) {
-    Serial.print("axis ");
-    Serial.println(axis, DEC);
-    for (int ms = 0; ms < DURATION; ms++) {
-      float ang = sin(ms / (float)DURATION * 2 * PI) * 2 * PI;  // Vary angle sinusoidally over 10 seconds with amplitude of 2pi
-      setAxis(axis, ang);
-      delay(1 /* ms */);
+  // Wait for a newline
+  while (1) {
+    if (Serial.available()) {
+      if (Serial.read() == '>') break;
     }
   }
 
-  // Move one of the six needles at a time
-  for (int needle = 0; needle < 6; needle++) {
-    Serial.print("needle ");
-    Serial.println(needle, DEC);
-    for (int ms = 0; ms < DURATION; ms++) {
-      // Midpoint is 128
-      float val = sin(ms / (float)DURATION * 2 * PI) * 64 + 128;  // Vary angle sinusoidally over 10 seconds from 1 to 255
-      analogWrite(otherOutputs[needle], val);
-      delay(1 /* ms */);
-    }
-  }
+  float rollDeg = Serial.parseFloat(); // Received angle in degrees
+  float rollRad = rollDeg / 360. * 2 * PI; // Angle in radians
+  float pitchDeg = Serial.parseFloat();
+  float pitchRad = pitchDeg / 360. * 2 * PI;
+  float yawDeg = Serial.parseFloat();
+  float yawRad = yawDeg / 360. * 2 * PI;
+  setAxis(0, rollRad);
+  setAxis(1, pitchRad);
+  setAxis(2, yawRad);
+  // Echo back for debugging
+  Serial.print(rollDeg);
+  Serial.print(" ");
+  Serial.print(pitchDeg);
+  Serial.print(" ");
+  Serial.print(yawDeg);
+  Serial.print(" ");
+  Serial.println("");
 }
