@@ -219,19 +219,19 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(SYNC), syncInterrupt, RISING);
 }
 
-void loop() {
-  // Wait for a newline
-  while (1) {
-    if (Serial.available()) {
-      if (Serial.read() == '>') break;
-    }
-  }
+extern int data[];   // Hardcoded roll, pitch, yaw data for the flight
+extern int len;      // Length of data[]
+int interval = 100;  // 100 ms between data entries
+float scale = 10;    // Angles are scaled by a factor of 10
+int idx = 0;         // Index into data
 
-  float rollDeg = Serial.parseFloat(); // Received angle in degrees
-  float rollRad = rollDeg / 360. * 2 * PI; // Angle in radians
-  float pitchDeg = Serial.parseFloat();
+void loop() {
+  float rollDeg = data[idx++] / scale;
+  float pitchDeg = data[idx++] / scale;
+  float yawDeg = data[idx++] / scale;
+
+  float rollRad = rollDeg / 360. * 2 * PI;  // Angle in radians
   float pitchRad = pitchDeg / 360. * 2 * PI;
-  float yawDeg = Serial.parseFloat();
   float yawRad = yawDeg / 360. * 2 * PI;
   setAxis(0, rollRad);
   setAxis(1, pitchRad);
@@ -244,4 +244,11 @@ void loop() {
   Serial.print(yawDeg);
   Serial.print(" ");
   Serial.println("");
+  delay(interval);
+  
+  if (idx >= len) {
+    // End of data
+    idx = 0;
+    Serial.println("Restarting");
+  }
 }

@@ -23,7 +23,7 @@ t0 = None # Initial timestamp of input data
 ts = None # Initial wall time
 for line in sys.stdin:
   # Parse the log line, extracting the timestamp, roll, pitch, and yaw
-  m = re.search(r'(\S+ \S+):.*Roll : (\S+). Pitch : (\S+), Yaw : (\S+)', line)
+  m = re.search(r'(\S+ \S+):.*Roll : (\S+). Pitch : (\S+), Yaw : ([^,])', line)
   if m:
     t, r, p, y = m.groups()
     r = float(r)
