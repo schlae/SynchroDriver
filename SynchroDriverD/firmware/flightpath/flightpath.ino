@@ -221,14 +221,28 @@ void setup() {
 
 extern int data[];   // Hardcoded roll, pitch, yaw data for the flight
 extern int len;      // Length of data[]
-int interval = 100;  // 100 ms between data entries
+int interval = 10;  // 10 ms between updates (100 ms between data entries)
 float scale = 10;    // Angles are scaled by a factor of 10
 int idx = 0;         // Index into data
+int interpCount = 0;      // Interpolation count: 0-9
+const int interpRange = 10; // 10 interpolated updates per data point
+
+/*
+ * Linear interpolation between v0 and v1. Value is v0 when interpCount == 0 and v1 when interpCount == interpRange
+*/
+float interp(float v0, float v1, float interpCount) {
+  return v0 * (1 - interpCount / interpRange) + v1 * interpCount / interpRange;
+}
 
 void loop() {
-  float rollDeg = data[idx++] / scale;
-  float pitchDeg = data[idx++] / scale;
-  float yawDeg = data[idx++] / scale;
+  float rollDeg = interp(data[idx], data[idx + 3], interpCount) / scale;
+  float pitchDeg = interp(data[idx + 1], data[idx + 4], interpCount) / scale;
+  float yawDeg = interp(data[idx + 2], data[idx + 5], interpCount) / scale;
+  interpCount += 1;
+  if (interpCount == interpRange) {
+    interpCount = 0;
+    idx += 3;
+  }
 
   float rollRad = rollDeg / 360. * 2 * PI;  // Angle in radians
   float pitchRad = pitchDeg / 360. * 2 * PI;
@@ -237,6 +251,7 @@ void loop() {
   setAxis(1, pitchRad);
   setAxis(2, yawRad);
   // Echo back for debugging
+  #if 0
   Serial.print(rollDeg);
   Serial.print(" ");
   Serial.print(pitchDeg);
@@ -244,9 +259,10 @@ void loop() {
   Serial.print(yawDeg);
   Serial.print(" ");
   Serial.println("");
+  #endif
   delay(interval);
   
-  if (idx >= len) {
+  if (idx >= len - 6) {
     // End of data
     idx = 0;
     Serial.println("Restarting");
