@@ -221,45 +221,42 @@ void setup() {
 
 #define DELAY 2000 // 2 seconds
 
+float rad(float deg) {
+  return deg / 360. * 2 * PI;
+}
+
+/** Radian input */
+void roll(float r) {
+  setAxis(0, r + rad(92 + 180));
+}
+
+void yaw(float r) {
+  setAxis(1, -r + rad(25));
+}
+
+void pitch(float r) {
+  setAxis(2, r + rad(20 + 180));
+}
+
 void loop() {
-  float deg30 = 30 / 360. * 2 * PI;  // 30 degrees in radians
-  // Roll 0, +30, -30 degrees
-  setAxis(0, 0.);
-  setAxis(1, 0.);
-  setAxis(2, 0.);
+  roll(rad(0));
+  pitch(rad(0));
+  yaw(rad(0));
+  delay(3 * DELAY);
+  roll(rad(30));
   delay(DELAY);
-  setAxis(0, deg30);
-  setAxis(1, 0.);
-  setAxis(2, 0.);
+  roll(rad(-30));
   delay(DELAY);
-  setAxis(0, -deg30);
-  setAxis(1, 0.);
-  setAxis(2, 0.);
+  roll(0);
   delay(DELAY);
-  setAxis(0, 0);
-  setAxis(1, 0.);
-  setAxis(2, 0.);
+  pitch(rad(30));
   delay(DELAY);
-  // Pitch 0, +30, -30 degrees
-  setAxis(0, 0);
-  setAxis(1, deg30);
-  setAxis(2, 0.);
+  pitch(rad(-30));
   delay(DELAY);
-  setAxis(0, 0);
-  setAxis(1, -deg30);
-  setAxis(2, 0.);
+  pitch(rad(0));
   delay(DELAY);
-  setAxis(0, 0);
-  setAxis(1, 0.);
-  setAxis(2, 0.);
+  yaw(rad(30));
   delay(DELAY);
-  // Yaw 0, +30, -30 degrees
-  setAxis(0, 0);
-  setAxis(1, 0);
-  setAxis(2, deg30);
-  delay(DELAY);
-  setAxis(0, 0);
-  setAxis(1, 0);
-  setAxis(2, -deg30);
+  yaw(rad(-30));
   delay(DELAY);
 }
