@@ -239,8 +239,19 @@ const int interpRange = 10; // 10 interpolated updates per data point
 
 /*
  * Linear interpolation between v0 and v1. Value is v0 when interpCount == 0 and v1 when interpCount == interpRange
+ * Handle wraparound of angle, so interpolating 0 and 360 won't yield 180, for instance. Input must be in degrees.
 */
 float interp(float v0, float v1, float interpCount) {
+  // Adjust v0 and v1 by multiples of 360 degrees until they are within half a circle (180 degrees) of each other.
+  // Then the interpolation will take the short path.
+  while (v0 - v1 > 180) {
+    v1 += 360;
+  }
+  while (v1 - v0 > 180) {
+    v1 -= 360;
+  }
+  // Invariants: |v0 - v1| <= 180. v0 and v1 are the same as the initial v0 and v1 module 360 degrees.
+  // It doesn't matter if v0 and v1 are less than 0 or greater than 360 at this point, as long as they are close together.
   return v0 * (1 - interpCount / interpRange) + v1 * interpCount / interpRange;
 }
 
