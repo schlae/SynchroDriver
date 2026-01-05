@@ -187,6 +187,9 @@ void setAxis(int axis, float ang) {
   interrupts();
 }
 
+extern int data[];   // Hardcoded roll, pitch, yaw data for the flight
+float scale = 10;    // Angles are scaled by a factor of 10
+
 void setup() {
   Serial.begin(9600);
   pinMode(SYNC, INPUT);
@@ -217,12 +220,19 @@ void setup() {
   myTimer.begin(update, 25);  // 25 microseconds * 100 samples give 400 Hz
 
   attachInterrupt(digitalPinToInterrupt(SYNC), syncInterrupt, RISING);
+
+  // Initialize and wait to stabilize
+  float rollDeg = data[0] / scale;
+  float pitchDeg = data[1] / scale;
+  float yawDeg = (data[2] - data[2]) / scale;
+  roll(rad(rollDeg));
+  pitch(rad(pitchDeg));
+  yaw(rad(yawDeg));
+  delay(3000);
 }
 
-extern int data[];   // Hardcoded roll, pitch, yaw data for the flight
 extern int len;      // Length of data[]
 int interval = 10;  // 10 ms between updates (100 ms between data entries)
-float scale = 10;    // Angles are scaled by a factor of 10
 int idx = 0;         // Index into data
 int interpCount = 0;      // Interpolation count: 0-9
 const int interpRange = 10; // 10 interpolated updates per data point
@@ -234,32 +244,35 @@ float interp(float v0, float v1, float interpCount) {
   return v0 * (1 - interpCount / interpRange) + v1 * interpCount / interpRange;
 }
 
+float rad(float deg) {
+  return deg / 360. * 2 * PI;
+}
+
+void roll(float r) {
+  setAxis(0, r + rad(92 + 180));
+}
+
+void yaw(float r) {
+  setAxis(1, -r + rad(25));
+}
+
+void pitch(float r) {
+  setAxis(2, r + rad(20 + 180));
+}
+
 void loop() {
   float rollDeg = interp(data[idx], data[idx + 3], interpCount) / scale;
   float pitchDeg = interp(data[idx + 1], data[idx + 4], interpCount) / scale;
-  float yawDeg = interp(data[idx + 2], data[idx + 5], interpCount) / scale;
+  float yawDeg = (interp(data[idx + 2], data[idx + 5], interpCount) - data[2]) / scale;
+  roll(-rad(rollDeg));
+  pitch(rad(pitchDeg));
+  yaw(rad(yawDeg));
   interpCount += 1;
   if (interpCount == interpRange) {
     interpCount = 0;
     idx += 3;
   }
-
-  float rollRad = rollDeg / 360. * 2 * PI;  // Angle in radians
-  float pitchRad = pitchDeg / 360. * 2 * PI;
-  float yawRad = yawDeg / 360. * 2 * PI;
-  setAxis(0, rollRad);
-  setAxis(1, pitchRad);
-  setAxis(2, yawRad);
-  // Echo back for debugging
-  #if 0
-  Serial.print(rollDeg);
-  Serial.print(" ");
-  Serial.print(pitchDeg);
-  Serial.print(" ");
-  Serial.print(yawDeg);
-  Serial.print(" ");
-  Serial.println("");
-  #endif
+  
   delay(interval);
   
   if (idx >= len - 6) {
