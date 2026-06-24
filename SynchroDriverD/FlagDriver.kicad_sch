@@ -993,7 +993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+36V"
+		(property "Value" "+36V1"
 			(at 96.52 55.88 0)
 			(effects
 				(font
